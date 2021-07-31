@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- C'EST UN FICHIER HTML -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Mon premier projet | John Doe</title>
+		<link rel="stylesheet" type="text/css" href="design/default.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/png" href="pictures/favicon.png">
+	</head>
+
+	<body>
+
+		<!-- ENTETE -->
+		<header>
+			<!-- PRENOM ET NOM -->
+			<h1>John Doe</h1>
+			<!-- SPAN -->
+			<span class="separator"></span>
+			<!-- NOM DU PROJET -->
+			<h2>Mon premier projet</h2>
+		</header>
+
+		<!-- MENU -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="#picture-project">Production</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		
+		<div class="contener">
+
+			<!-- INTRODUCTION -->
+			<section>
+				<h3>Introduction</h3>
+
+				<!-- DESCRIPTION DU PROJET -->
+				<p>Ceci est mon premier projet.</p>
+			</section>
+
+			<!-- PRODUCTION -->
+			<section id="picture-project">
+				<h3>Production</h3>
+
+				<video width="80%" controls>
+					<source src="pictures/mark-zuckerberg.mp4">
+					<source src="pictures/mark-zuckerberg.avi">
+					Votre navigateur ne peut pas lire la vidéo.
+				</video>
+
+				<img src="pictures/presentation.png" alt="mon premier projet" />
+			</section>
+
+			<!-- CONTACT -->
+			<section>
+				<h3>Contact</h3>
+				
+				<div id="contact">
+					<!-- DESCRIPTION -->
+					<p>Si vous voulez me contacter, n'hésitez pas à m'envoyer un email à <b><a href="mailto:john@doe.com">john@doe.com</a></b>.</p>
+				</div>
+			</section>
+		</div>
+
+		<!-- FOOTER -->
+		<footer>
+			<span>2018 &copy; John Doe</span>
+		</footer>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112372114-3"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-112372114-3');
+	</script>
+
+
+	</body>
+</html>
