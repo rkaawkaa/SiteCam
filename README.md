@@ -13,4 +13,9 @@ Site Portfolio Cam
     Pour les projets : liens vers des vidéos, des photos et explications de ce que l'on a fait avec des mots en gras. 
     Voir pour mettre éventuellement le site en vert 
     Lien vers plusieurs pages HTML pour chaque projets
+
+(2) Pour les pages des projets, mettre plusieurs photos avec une possibilité de cliquer à gauche ou droite pour faire défiler les photos  ( voir cours ivan pour faire ça )
+	Mettre éventuellement section avec " + " pour cliquer dessus et ouvrir le texte. 
+
+(3) Display des bruits lors d'ouverture de pages.
     
