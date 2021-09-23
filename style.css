@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Header section*/
+
+#header {
+    background-image: url(./img/headersection.jpg);
+    background-size: cover;
+    background-position: top-center;
+    position: relative;
+    z-index: 1;
+}
+
+#header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: .4;
+    z-index: -1;
+}
+
+#header .header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+#header h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+
+#header h1:nth-child(1) {
+    animation-delay: 1s;
+}
+
+#header h1:nth-child(2) {
+    animation-delay: 2s;
+}
+
+#header h1:nth-child(3) {
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 3s;
+}
+
+#header h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #0c3b9f;
+    opacity: 0.95;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .3s;
+}
+
+#header h1:nth-child(1) span {
+    animation-delay: .5s;
+}
+
+#header h1:nth-child(2) span {
+    animation-delay: 1.5s;
+}
+
+#header h1:nth-child(3) span {
+    animation-delay: 2.5s;
+}
+
+#header .cta {
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 30px;
+    color: #000099;
+    background-color: rgb( 222, 232, 250, 0.25);
+    border: 2px solid #000099;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .5s ease;
+    transition-property: background-color, color;
+}
+
+#header .cta:hover {
+    color: white;
+    background-color: #000099;
+}
+
+
+/*End Header section*/
+
+
+/* Skills section */
+
+#skills {}
+
+#skills .skills {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#skills .section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#skills .section-title span {
+    color: #000099;
+}
+
+#skills .skills-top p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+
+#skills .skills-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#skills .skill-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url("./img/skillitem.jpg");
+    background-size: cover;
+    margin: 10px 5%;
+}
+
+
+/* End of skills section */
+
+
+/* Keyframes */
+
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_reveal {
+    100% {
+        color: white;
+    }
+}
+
+@keyframes text_reveal_name {
+    100% {
+        color: #B8C2FC;
+        font-weight: 500px;
+    }
+}
+
+
+/*End keyframes  */
