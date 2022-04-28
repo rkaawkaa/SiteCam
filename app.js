@@ -2,6 +2,7 @@ const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger'
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
 const header = document.querySelector('.header.container');
+const linkedin = document.querySelector('.linkedin');
 
 hamburger.addEventListener('click', () =>{
     hamburger.classList.toggle('active');
@@ -26,3 +27,8 @@ menu_item.forEach(item=> {
     })
 })
 
+linkedin.addEventListener('click', () => {
+    window.open('https://www.linkedin.com/in/camille-tr%C3%A9ton-96356b123/');
+
+
+})
